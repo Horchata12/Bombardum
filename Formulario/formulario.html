@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="theme.css">
+        <title>Encuesta</title>
+        <link rel="icon" href="../imagenes/icon.ico" type="image/x-icon" sizes="16x16">
+    </head>
+    <h1 style="color:blue">Encuesta</h1>
+    <form name="encuesta" id="encuesta" action="" method="get">
+        <fieldset>
+            <legend>Datos personales:</legend>
+                <h4><label for="nombre">Nombre</label>
+                <input id="nombre" name="nombre" type="text" placeholder="campo obligatorio" required/></h4>
+                <h4><label for="email">Email</label>
+                <input id="email" name="email" type="text" placeholder="campo obligatorio" required/></h4>
+                <h4><label for="edad">Edad</label>
+                <input id="edad" name="edad" type="number" /></h4>
+           </fieldset>
+        <h4><label for="valoracion">Valoración</label>
+        <select id="valoracion" name="valoracion">
+            <option value="5">5-Excelente</option>
+            <option value="4">4-Recomendable</option>
+            <option value="3" selected>3-Bueno</option>
+            <option value="2">2-Regular</option>
+            <option value="1">1-Malo</option>
+        </select></h4>
+        <h4><label for="Caracteristicas">¿Que es lo que mas te ha gustado?</label></h4>
+        <input type="checkbox" id="Caracteristica1" name="Caracteristica1" value="Dificultad">
+        <label for="Caracteristica1"> Es fácil de aprender</label><br>
+        <input type="checkbox" id="Caracteristica2" name="Caracteristica2" value="Jugabilidad">
+        <label for="Caracteristica2"> Te apetece jugar más</label><br>
+        <input type="checkbox" id="Caracteristica3" name="Caracteristica3" value="Mecanica">
+        <label for="Caracteristica3"> La mecánica es original</label><br>
+        <input type="checkbox" id="Caracteristica4" name="Caracteristica4" value="Diseño">
+        <label for="Caracteristica4"> Su diseño es muy bonito</label><br>
+        <input type="checkbox" id="Caracteristica5" name="Caracteristica5" value="Precio">
+        <label for="Caracteristica5"> Es barato</label><br>
+        <h4><label for="compra">¿Lo comprarías?</label>
+        <input type="radio" id="SI" name="compra" value="SI">
+        <label for="SI">Si</label>
+        <input type="radio" id="NO" name="compra" value="NO">
+        <label for="NO">No</label></h4>
+        <button type="reset">Reestablecer </button>
+        <button type="submit">Enviar </button>
+    </form>
+</html>
